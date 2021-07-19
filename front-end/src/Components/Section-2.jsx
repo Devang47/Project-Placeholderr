@@ -13,7 +13,6 @@ function Section2() {
           <li className="item item-1">
             <div className="display-image">
               <a href="/images" target="_blank" rel="noopener noreferrer">
-                {" "}
                 <img src={Images} alt="Placeholder images" />
               </a>
             </div>
@@ -29,7 +28,7 @@ function Section2() {
                   <br />
                   &nbsp;&nbsp;&nbsp;&nbsp;.then((res) =&gt; res.json())
                   <br />
-                  &nbsp;&nbsp;&nbsp;&nbsp;.then((data) =&gt; console.log(data){" "}
+                  &nbsp;&nbsp;&nbsp;&nbsp;.then((data) =&gt; console.log(data)
                   <br />
                   );
                 </span>
@@ -39,7 +38,6 @@ function Section2() {
           <li className="item item-2">
             <div className="display-image">
               <a href="/posts" target="_blank" rel="noopener noreferrer">
-                {" "}
                 <img src={Posts} alt="" />
               </a>
             </div>
@@ -63,7 +61,6 @@ function Section2() {
           <li className="item item-3">
             <div className="display-image">
               <a href="/comments" target="_blank" rel="noopener noreferrer">
-                {" "}
                 <img src={Comments} alt="" />
               </a>
             </div>
@@ -85,8 +82,11 @@ function Section2() {
           </li>
           <li className="item item-4">
             <div className="display-image">
-              <a href="http://" target="_blank" rel="noopener noreferrer">
-                {" "}
+              <a
+                href="/github-profiles"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={Github} alt="" />
               </a>
             </div>

@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Navbar from "./Navbar";
 import Fish from "../Assets/Fish-1.svg";
 
 function Section1() {
-  const [data, setData] = useState();
-
   return (
     <>
       <Navbar />
