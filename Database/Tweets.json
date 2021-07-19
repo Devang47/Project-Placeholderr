@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "name": "Steve Lamb",
+    "profilePic": "https://i.pravatar.cc/300",
+    "username": "@stevelamb",
+    "tweetData": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis aliquam faucibus. Quisque vitae ipsum at sem ultrices ultricies. Aenean sollicitudin",
+    "date": {
+      "month": "Jun",
+      "day": 2,
+      "year": 2021
+    },
+    "retweets": 1,
+    "likes": 21,
+    "comments": 2,
+    "time": "12:00 PM"
+  },
+  {
+    "id": 2,
+    "name": "Tammie Cawley",
+    "profilePic": "https://i.pravatar.cc/300",
+    "username": "@tammiecwl",
+    "tweetData": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis aliquam faucibus. Quisque vitae ipsum at sem ultrices ultricies. Aenean sollicitudin",
+    "date": {
+      "month": "Mar",
+      "day": 21,
+      "year": 2019
+    },
+    "retweets": 12,
+    "likes": 23,
+    "comments": 6,
+    "time": "1:00 AM"
+  },
+  {
+    "id": 3,
+    "name": "Derek Allen",
+    "profilePic": "https://i.pravatar.cc/300",
+    "username": "@Derek",
+    "tweetData": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis aliquam faucibus. Quisque vitae ipsum at sem ultrices ultricies. Aenean sollicitudin",
+    "date": {
+      "month": "May",
+      "day": 24,
+      "year": 2021
+    },
+    "retweets": 10,
+    "likes": 210,
+    "comments": 20,
+    "time": "5:00 PM"
+  },
+  {
+    "id": 4,
+    "name": "Albert Campbell",
+    "profilePic": "https://i.pravatar.cc/300",
+    "username": "@albertcam",
+    "tweetData": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis aliquam faucibus. Quisque vitae ipsum at sem ultrices ultricies. Aenean sollicitudin",
+    "date": {
+      "month": "Jun",
+      "day": 20,
+      "year": 2020
+    },
+    "retweets": 5,
+    "likes": 23,
+    "comments": 4,
+    "time": "10:00 AM"
+  },
+  {
+    "id": 5,
+    "name": "Cleo Lee",
+    "profilePic": "https://i.pravatar.cc/300",
+    "username": "@cleolee",
+    "tweetData": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis aliquam faucibus. Quisque vitae ipsum at sem ultrices ultricies. Aenean sollicitudin",
+    "date": {
+      "month": "Feb",
+      "day": 14,
+      "year": 2021
+    },
+    "retweets": 0,
+    "likes": 22,
+    "comments": 0,
+    "time": "8:00 PM"
+  },
+  {
+    "id": 6,
+    "name": "Phillip Steele",
+    "profilePic": "https://i.pravatar.cc/300",
+    "username": "@phillipsteele",
+    "tweetData": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis aliquam faucibus. Quisque vitae ipsum at sem ultrices ultricies. Aenean sollicitudin",
+    "date": {
+      "month": "Dec",
+      "day": 24,
+      "year": 2021
+    },
+    "retweets": 34,
+    "likes": 234,
+    "comments": 23,
+    "time": "10:00 AM"
+  },
+  {
+    "id": 7,
+    "name": "Michael Clemons",
+    "profilePic": "https://i.pravatar.cc/300",
+    "username": "@michaelclemons",
+    "tweetData": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis aliquam faucibus. Quisque vitae ipsum at sem ultrices ultricies. Aenean sollicitudin",
+    "date": {
+      "month": "Jun",
+      "day": 18,
+      "year": 2021
+    },
+    "retweets": 30,
+    "likes": 401,
+    "comments": 31,
+    "time": "1:00 PM"
+  },
+  {
+    "id": 8,
+    "name": "Ruth Huff",
+    "profilePic": "https://i.pravatar.cc/300",
+    "username": "@ruthhuff",
+    "tweetData": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis aliquam faucibus. Quisque vitae ipsum at sem ultrices ultricies. Aenean sollicitudin",
+    "date": {
+      "month": "Aug",
+      "day": 4,
+      "year": 2020
+    },
+    "retweets": 12,
+    "likes": 51,
+    "comments": 2,
+    "time": "12:00 PM"
+  },
+  {
+    "id": 9,
+    "name": "Alexandra Yarbrough",
+    "profilePic": "https://i.pravatar.cc/300",
+    "username": "@Alexandra",
+    "tweetData": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis aliquam faucibus. Quisque vitae ipsum at sem ultrices ultricies. Aenean sollicitudin",
+    "date": {
+      "month": "Sep",
+      "day": 13,
+      "year": 2021
+    },
+    "retweets": 4,
+    "likes": 30,
+    "comments": 2,
+    "time": "2:00 PM"
+  },
+  {
+    "id": 10,
+    "name": "Kelly Tamayo",
+    "profilePic": "https://i.pravatar.cc/300",
+    "username": "@stevelamb",
+    "tweetData": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis aliquam faucibus. Quisque vitae ipsum at sem ultrices ultricies. Aenean sollicitudin",
+    "date": {
+      "month": "Mar",
+      "day": 29,
+      "year": 2021
+    },
+    "retweets": 0,
+    "likes": 2,
+    "comments": 0,
+    "time": "12:00 AM"
+  }
+]
