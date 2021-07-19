@@ -115,32 +115,32 @@ app.get("/github-profiles", (req, res) => {
   });
 });
 
-app.post("/posts", (req, res) => {
-  let result = validatePost(req, Joi);
-  if (result.error) {
-    res.status(400).send(result.error.details[0].message);
-  }
-  let obj;
-  fs.readFile("./Database/posts.json", (err, data) => {
-    obj = JSON.parse(data);
-    let newItem = {
-      userId: Math.ceil((obj.length + 1) / 10),
-      id: obj.length + 1,
-      title: result.value.title,
-      body: result.value.body,
-    };
-    obj.push(newItem);
-    res.send(newItem);
-  });
-});
+// app.post("/posts", (req, res) => {
+//   let result = validatePost(req);
+//   if (result.error) {
+//     res.status(400).send(result.error.details[0].message);
+//   }
+//   let obj;
+//   fs.readFile("./Database/posts.json", (err, data) => {
+//     obj = JSON.parse(data);
+//     let newItem = {
+//       userId: Math.ceil((obj.length + 1) / 10),
+//       id: obj.length + 1,
+//       title: result.value.title,
+//       body: result.value.body,
+//     };
+//     obj.push(newItem);
+//     res.send(newItem);
+//   });
+// });
 
-function validatePost(req, Joi) {
-  const schema = Joi.object({
-    title: Joi.string().min(10).required(),
-    body: Joi.string().min(20).required(),
-  });
-  return schema.validate(req.body);
-}
+// function validatePost(req) {
+//   const schema = Joi.object({
+//     title: Joi.string().min(10).required(),
+//     body: Joi.string().min(20).required(),
+//   });
+//   return schema.validate(req.body);
+// }
 
 port = process.env.port || 3000;
 app.listen(port, console.log(`listening on port ${port}`));
