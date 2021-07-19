@@ -8,7 +8,7 @@
     "npm": "7.18.1"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "npm cache clean --force && rm -rf node_modules && npm install && node index.js ",
     "heroku-postbuild": "npm uninstall joi && cd front-end && npm install"
   },
   "keywords": [],
