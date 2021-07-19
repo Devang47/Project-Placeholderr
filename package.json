@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "cd front-end && npm install"
+    "heroku-postbuild": "npm uninstall joi && cd front-end && npm install"
   },
   "keywords": [],
   "author": "Devang saklani",
