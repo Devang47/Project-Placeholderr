@@ -32,8 +32,7 @@ function Section3() {
       </ul>
 
       <div className="contact-me">
-        Looking for something else?
-        <a href="mailto:devangsaklani@gmail.com">Contact me</a>
+        Looking for something else?&nbsp;<a href="mailto:devangsaklani@gmail.com">Contact me</a>
       </div>
     </section>
   );
