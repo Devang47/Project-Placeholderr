@@ -27,7 +27,9 @@ function Navbar() {
             </button>
           </a>
         </div>
-        <div className="Navbar-logo MainNavicon">Kitatsu</div>
+        <div className="Navbar-logo MainNavicon">
+          <a href="https://project-placeholderr.herokuapp.com/#">Kitatsu</a>
+        </div>
         <div className="Navbar-right-icon MainNavicon">
           <a
             href="https://devang-saklani.web.app/#Contact"
