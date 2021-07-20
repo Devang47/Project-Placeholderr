@@ -53,7 +53,6 @@ app.get("/covid-world", (req, res) => {
 app.get("/covid-world/:n", (req, res) => {
   const q = req.params.n.toUpperCase();
   let result;
-  console.log(q);
   fetch(
     "https://api.apify.com/v2/key-value-stores/tVaYRsPHLjNdNBu7S/records/LATEST?disableRedirect=true"
   )
