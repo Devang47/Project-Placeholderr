@@ -7,11 +7,12 @@ function Navbar() {
       <div className="NavWrapper">
         <div className="Navbar-trigger MainNavicon">
           <a
-            href="http://Devangsaklani.web.app"
+            href="https://github.com/Devang47/Project-Placeholderr"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Github btn"
           >
-            <button onClick={NavbarOpen}>
+            <button name="Github btn">
               <svg
                 width="24"
                 height="23"
@@ -26,11 +27,12 @@ function Navbar() {
             </button>
           </a>
         </div>
-        <div className="Navbar-logo MainNavicon">
-          <a href="#">Kitatsu</a>
-        </div>
+        <div className="Navbar-logo MainNavicon">Kitatsu</div>
         <div className="Navbar-right-icon MainNavicon">
-          <a href="https://devang-saklani.web.app/#Contact">
+          <a
+            href="https://devang-saklani.web.app/#Contact"
+            aria-label="Contact me btn"
+          >
             <svg
               width={28}
               height={28}

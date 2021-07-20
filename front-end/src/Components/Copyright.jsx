@@ -15,7 +15,12 @@ function Section3() {
         <section className="attribution">
           <span className="head">Our Sources:</span>
           <ul>
-            <a href="https://api.nasa.gov/" target="_blank">
+            <a
+              href="https://api.nasa.gov/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="NASA"
+            >
               <li>
                 NASA
                 <svg
@@ -32,7 +37,12 @@ function Section3() {
                 </svg>
               </li>
             </a>
-            <a href="https://jsonplaceholder.typicode.com/" target="_blank">
+            <a
+              href="https://jsonplaceholder.typicode.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="JSONPlaceholder"
+            >
               <li>
                 JSONPlaceholder
                 <svg
@@ -49,7 +59,12 @@ function Section3() {
                 </svg>
               </li>
             </a>
-            <a href="https://source.unsplash.com/">
+            <a
+              href="https://source.unsplash.com/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Unsplash"
+            >
               <li>
                 Unsplash
                 <svg
@@ -66,7 +81,12 @@ function Section3() {
                 </svg>
               </li>
             </a>
-            <a href="https://www.covid19india.org/">
+            <a
+              href="https://www.covid19india.org/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label=" Covid-19 India"
+            >
               <li>
                 Covid-19 India
                 <svg

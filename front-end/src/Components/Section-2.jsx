@@ -12,8 +12,13 @@ function Section2() {
         <ul>
           <li className="item item-1">
             <div className="display-image">
-              <a href="/images" target="_blank" rel="noopener noreferrer">
-                <img src={Images} alt="Placeholder images" />
+              <a
+                href="/images"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Placeholder images"
+              >
+                <img src={Images} alt="Placeholder images API" />
               </a>
             </div>
             <div className="details">
@@ -37,8 +42,13 @@ function Section2() {
           </li>
           <li className="item item-2">
             <div className="display-image">
-              <a href="/posts" target="_blank" rel="noopener noreferrer">
-                <img src={Posts} alt="" />
+              <a
+                href="/posts"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Posts"
+              >
+                <img src={Posts} alt="Posts API" />
               </a>
             </div>
             <div className="details">
@@ -60,8 +70,13 @@ function Section2() {
           </li>
           <li className="item item-3">
             <div className="display-image">
-              <a href="/comments" target="_blank" rel="noopener noreferrer">
-                <img src={Comments} alt="" />
+              <a
+                href="/comments"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Comments"
+              >
+                <img src={Comments} alt="Comments API" />
               </a>
             </div>
             <div className="details">
@@ -86,8 +101,9 @@ function Section2() {
                 href="/github-profiles"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Github"
               >
-                <img src={Github} alt="" />
+                <img src={Github} alt="Github API" />
               </a>
             </div>
             <div className="details">
