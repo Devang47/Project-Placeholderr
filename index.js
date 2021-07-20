@@ -141,5 +141,4 @@ app.get("/github-profiles", (req, res) => {
 //   return schema.validate(req.body);
 // }
 
-port = process.env.port || 3000;
-app.listen(port, console.log(`listening on port ${port}`));
+app.listen(process.env.PORT || 5000);
