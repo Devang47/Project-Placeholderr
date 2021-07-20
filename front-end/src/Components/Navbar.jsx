@@ -32,7 +32,7 @@ function Navbar() {
           <a href="#">Kitatsu</a>
         </div>
         <div className="Navbar-right-icon MainNavicon">
-          <a href="#">
+          <a href="https://devang-saklani.web.app/#Contact">
             <svg
               width={28}
               height={28}
