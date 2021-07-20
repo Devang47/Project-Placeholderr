@@ -2,6 +2,7 @@ const express = require("express");
 const fetch = require("node-fetch");
 const fs = require("fs");
 const path = require("path");
+const { type } = require("os");
 const app = express();
 
 app.use(express.json());
@@ -49,6 +50,20 @@ app.get("/covid-world", (req, res) => {
     .then((data) => res.send(data));
 });
 
+app.get("/covid-world/:n", (req, res) => {
+  const q = req.params.n.toUpperCase();
+  let result;
+  console.log(q);
+  fetch(
+    "https://api.apify.com/v2/key-value-stores/tVaYRsPHLjNdNBu7S/records/LATEST?disableRedirect=true"
+  )
+    .then((res) => res.json())
+    .then((data) => {
+      result = data.filter((e) => e.country.toUpperCase() === q )
+      res.send(result);
+    });
+});
+
 app.get("/covid-usa", (req, res) => {
   fetch(
     "https://api.apify.com/v2/key-value-stores/moxA3Q0aZh5LosewB/records/LATEST?disableRedirect=true"
@@ -86,9 +101,25 @@ app.get("/comments", (req, res) => {
   });
 });
 
+app.get("/comments/:n", (req, res) => {
+  let num = parseInt(req.params.n);
+  fs.readFile("./Database/Comments.json", (err, data) => {
+    let obj = JSON.parse(data).slice(0, num);
+    res.send(obj);
+  });
+});
+
 app.get("/tweets", (req, res) => {
   fs.readFile("./Database/Tweets.json", (err, data) => {
     let obj = JSON.parse(data);
+    res.send(obj);
+  });
+});
+
+app.get("/tweets/:n", (req, res) => {
+  let num = parseInt(req.params.n);
+  fs.readFile("./Database/Tweets.json", (err, data) => {
+    let obj = JSON.parse(data).slice(0, num);
     res.send(obj);
   });
 });
@@ -100,6 +131,14 @@ app.get("/todos", (req, res) => {
   });
 });
 
+app.get("/todos/:n", (req, res) => {
+  let num = parseInt(req.params.n);
+  fs.readFile("./Database/todos.json", (err, data) => {
+    let obj = JSON.parse(data).slice(0, num);
+    res.send(obj);
+  });
+});
+
 app.get("/posts", (req, res) => {
   fs.readFile("./Database/posts.json", (err, data) => {
     let obj = JSON.parse(data);
@@ -107,9 +146,25 @@ app.get("/posts", (req, res) => {
   });
 });
 
+app.get("/posts/:n", (req, res) => {
+  let num = parseInt(req.params.n);
+  fs.readFile("./Database/posts.json", (err, data) => {
+    let obj = JSON.parse(data).slice(0, num);
+    res.send(obj);
+  });
+});
+
 app.get("/github-profiles", (req, res) => {
   fs.readFile("./Database/GithubProfiles.json", (err, data) => {
     let obj = JSON.parse(data);
+    res.send(obj);
+  });
+});
+
+app.get("/github-profiles/:n", (req, res) => {
+  let num = parseInt(req.params.n);
+  fs.readFile("./Database/GithubProfiles.json", (err, data) => {
+    let obj = JSON.parse(data).slice(0, num);
     res.send(obj);
   });
 });
