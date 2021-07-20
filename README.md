@@ -3,7 +3,7 @@
 A free JSON Placeholder rest API with many useful endpoints. Manufactured with Node, Express, and React and deployed on Heroku.
 
 
-## Endpoints
+## API Endpoints:
 This is the list of all the currently available endpoints along with their currently supported methods :
 
 - [Comments](https://project-placeholderr.herokuapp.com/comments) (get) 
@@ -19,7 +19,7 @@ This is the list of all the currently available endpoints along with their curre
 - [APOD](https://project-placeholderr.herokuapp.com/nasa-apod) (Astronomy Picture of the Day) by NASA (get)
 - [Random Github profiles](https://project-placeholderr.herokuapp.com/github-profiles/) (get)
 
-## How to use
+## How to use:
 
 You can easily call these API via Fetch, Axios or any other language specific tool/method. 
 Here is an example in JS (using fetch):
@@ -50,6 +50,6 @@ The data in these endpoints is gathered from various sources like **NASA**, **JS
 **Unsplash** and **Covid-19 India** and this data is free to use under The MIT License.
 
 
-## Creator 
+## Creator :
 This rest API and this documentation is hand coded by [**Devang Saklani**](https://devang-saklani.web.app/)
 
