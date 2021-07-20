@@ -100,17 +100,24 @@ header {
           0 9.6px 12.4px rgba(0, 0, 0, 0.013),
           0 16px 20.5px rgba(0, 0, 0, 0.015), 0 32px 41px rgba(0, 0, 0, 0.02);
 
-          transition: 0.2s ease;
-          &:hover{
-            transform: scale(1.02);
-          }
+        transition: 0.2s ease;
+        &:hover {
+          transform: scale(1.02);
+        }
         .display-image {
           height: 400px;
           background-color: #83eae0;
+          overflow: hidden;
           img {
             object-fit: cover;
             height: 100%;
             width: 100%;
+            transition: all 0.2s ease;
+          }
+          &:hover {
+            img {
+              transform: scale(1.04);
+            }
           }
         }
         .details {
@@ -196,8 +203,8 @@ header {
       li {
         background-color: #28c2ba;
         height: 300px;
-        transition: 0.2s ease;
-        &:hover{
+        transition: transform 0.2s ease;
+        &:hover {
           transform: scale(1.02);
         }
       }
@@ -206,43 +213,43 @@ header {
       }
     }
   }
-  .item-1{
-    background-image: url('../Assets/unsplash.jpg');
+  .item-1 {
+    background-image: url("../Assets/unsplash.jpg");
     background-size: cover;
     background-position: center;
   }
-  .item-2{
-    background-image: url('../Assets/todos.jpg');
+  .item-2 {
+    background-image: url("../Assets/todos.jpg");
     background-size: cover;
     background-position: center;
   }
-  .item-3{
-    background-image: url('../Assets/Tweets.jpg');
+  .item-3 {
+    background-image: url("../Assets/Tweets.jpg");
     background-size: cover;
     background-position: center;
   }
-  .item-4{
-    background-image: url('../Assets/NASA-APOD.jpg');
+  .item-4 {
+    background-image: url("../Assets/NASA-APOD.jpg");
     background-size: cover;
     background-position: center;
   }
-  .item-5{
-    background-image: url('../Assets/NASA-mars.jpg');
+  .item-5 {
+    background-image: url("../Assets/NASA-mars.jpg");
     background-size: cover;
     background-position: center;
   }
-  .item-6{
-    background-image: url('../Assets/covid-world.jpg');
+  .item-6 {
+    background-image: url("../Assets/covid-world.jpg");
     background-size: cover;
     background-position: center;
   }
-  .item-7{
-    background-image: url('../Assets/covid-India.jpg');
+  .item-7 {
+    background-image: url("../Assets/covid-India.jpg");
     background-size: cover;
     background-position: center;
   }
-  .item-8{
-    background-image: url('../Assets/covid-USA.jpg');
+  .item-8 {
+    background-image: url("../Assets/covid-USA.jpg");
     background-size: cover;
     background-position: center;
   }
@@ -331,7 +338,7 @@ header {
 }
 
 footer {
-    height: 111px;
+  height: 111px;
 
   text-align: center;
   display: flex;
@@ -552,7 +559,6 @@ footer {
       pointer-events: none;
     }
   }
-  
 }
 
 @media screen and (min-width: 1100px) {

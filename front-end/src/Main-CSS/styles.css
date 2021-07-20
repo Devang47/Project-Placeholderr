@@ -107,6 +107,7 @@ header .fish-illustration {
 .api-services .api-list ul li .display-image {
   height: 400px;
   background-color: #83eae0;
+  overflow: hidden;
 }
 
 .api-services .api-list ul li .display-image img {
@@ -114,6 +115,13 @@ header .fish-illustration {
      object-fit: cover;
   height: 100%;
   width: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.api-services .api-list ul li .display-image:hover img {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
 }
 
 .api-services .api-list ul li .details {
@@ -213,8 +221,10 @@ header .fish-illustration {
 .other-api-services ul a li {
   background-color: #28c2ba;
   height: 300px;
-  -webkit-transition: 0.2s ease;
-  transition: 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 
 .other-api-services ul a li:hover {
