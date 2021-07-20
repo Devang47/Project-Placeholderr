@@ -1,10 +1,12 @@
 const express = require("express");
 const fetch = require("node-fetch");
 const fs = require("fs");
+var cors = require("cors");
 const path = require("path");
 const { type } = require("os");
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 app.use(express.static(path.resolve(__dirname, "./front-end/build")));
 
@@ -56,7 +58,6 @@ app.get("/todos/:n", (req, res) => {
     res.send(obj);
   });
 });
-
 
 app.get("/posts", (req, res) => {
   fs.readFile("./Database/posts.json", (err, data) => {
@@ -119,7 +120,7 @@ app.get("/covid-world/:n", (req, res) => {
   )
     .then((res) => res.json())
     .then((data) => {
-      result = data.filter((e) => e.country.toUpperCase() === q )
+      result = data.filter((e) => e.country.toUpperCase() === q);
       res.send(result);
     });
 });

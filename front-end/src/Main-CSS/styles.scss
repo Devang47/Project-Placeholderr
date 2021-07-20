@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;600;800&family=Montserrat:wght@400;600&display=swap");
 
-// font-family: 'Montserrat', sans-serif;
-// font-family: 'Montserrat Alternates', sans-serif;
 * {
   margin: 0;
   padding: 0;
@@ -56,11 +54,8 @@ header {
     position: absolute;
     top: 270px;
     right: -100px;
-    // height: 500px;
     width: 500px;
     z-index: -1;
-    img {
-    }
   }
 }
 
