@@ -12,6 +12,67 @@ app.get("/", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./front-end/build", "index.html"));
 });
 
+app.get("/comments", (req, res) => {
+  fs.readFile("./Database/Comments.json", (err, data) => {
+    let obj = JSON.parse(data);
+    res.send(obj);
+  });
+});
+
+app.get("/comments/:n", (req, res) => {
+  let num = parseInt(req.params.n);
+  fs.readFile("./Database/Comments.json", (err, data) => {
+    let obj = JSON.parse(data).slice(0, num);
+    res.send(obj);
+  });
+});
+
+app.get("/tweets", (req, res) => {
+  fs.readFile("./Database/Tweets.json", (err, data) => {
+    let obj = JSON.parse(data);
+    res.send(obj);
+  });
+});
+
+app.get("/tweets/:n", (req, res) => {
+  let num = parseInt(req.params.n);
+  fs.readFile("./Database/Tweets.json", (err, data) => {
+    let obj = JSON.parse(data).slice(0, num);
+    res.send(obj);
+  });
+});
+
+app.get("/todos", (req, res) => {
+  fs.readFile("./Database/todos.json", (err, data) => {
+    let obj = JSON.parse(data);
+    res.send(obj);
+  });
+});
+
+app.get("/todos/:n", (req, res) => {
+  let num = parseInt(req.params.n);
+  fs.readFile("./Database/todos.json", (err, data) => {
+    let obj = JSON.parse(data).slice(0, num);
+    res.send(obj);
+  });
+});
+
+
+app.get("/posts", (req, res) => {
+  fs.readFile("./Database/posts.json", (err, data) => {
+    let obj = JSON.parse(data);
+    res.send(obj);
+  });
+});
+
+app.get("/posts/:n", (req, res) => {
+  let num = parseInt(req.params.n);
+  fs.readFile("./Database/posts.json", (err, data) => {
+    let obj = JSON.parse(data).slice(0, num);
+    res.send(obj);
+  });
+});
+
 app.get("/images", (req, res) => {
   fs.readFile("./Database/Placerholder-images.json", (err, data) => {
     let obj = JSON.parse(data);
@@ -91,66 +152,6 @@ app.get("/nasa-apod", (req, res) => {
   )
     .then((res) => res.json())
     .then((data) => res.send(data));
-});
-
-app.get("/comments", (req, res) => {
-  fs.readFile("./Database/Comments.json", (err, data) => {
-    let obj = JSON.parse(data);
-    res.send(obj);
-  });
-});
-
-app.get("/comments/:n", (req, res) => {
-  let num = parseInt(req.params.n);
-  fs.readFile("./Database/Comments.json", (err, data) => {
-    let obj = JSON.parse(data).slice(0, num);
-    res.send(obj);
-  });
-});
-
-app.get("/tweets", (req, res) => {
-  fs.readFile("./Database/Tweets.json", (err, data) => {
-    let obj = JSON.parse(data);
-    res.send(obj);
-  });
-});
-
-app.get("/tweets/:n", (req, res) => {
-  let num = parseInt(req.params.n);
-  fs.readFile("./Database/Tweets.json", (err, data) => {
-    let obj = JSON.parse(data).slice(0, num);
-    res.send(obj);
-  });
-});
-
-app.get("/todos", (req, res) => {
-  fs.readFile("./Database/todos.json", (err, data) => {
-    let obj = JSON.parse(data);
-    res.send(obj);
-  });
-});
-
-app.get("/todos/:n", (req, res) => {
-  let num = parseInt(req.params.n);
-  fs.readFile("./Database/todos.json", (err, data) => {
-    let obj = JSON.parse(data).slice(0, num);
-    res.send(obj);
-  });
-});
-
-app.get("/posts", (req, res) => {
-  fs.readFile("./Database/posts.json", (err, data) => {
-    let obj = JSON.parse(data);
-    res.send(obj);
-  });
-});
-
-app.get("/posts/:n", (req, res) => {
-  let num = parseInt(req.params.n);
-  fs.readFile("./Database/posts.json", (err, data) => {
-    let obj = JSON.parse(data).slice(0, num);
-    res.send(obj);
-  });
 });
 
 app.get("/github-profiles", (req, res) => {
