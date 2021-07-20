@@ -2,8 +2,6 @@ import React from "react";
 import "./Navbar.css";
 
 function Navbar() {
-  const NavbarOpen = () => {};
-
   return (
     <nav>
       <div className="NavWrapper">
