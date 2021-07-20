@@ -29,7 +29,7 @@ function Section2() {
               </p>
               <div className="api-call-example">
                 <span>
-                  fetch(&quot;/images/n&quot;)
+                  fetch(&quot;https://project-placeholderr.herokuapp.com/images&quot;)
                   <br />
                   &nbsp;&nbsp;&nbsp;&nbsp;.then((res) =&gt; res.json())
                   <br />
@@ -59,11 +59,13 @@ function Section2() {
               </p>
               <div className="api-call-example">
                 <span>
-                  fetch(&#39;https://devangisa.com&#39;)
+                  fetch(&quot;https://project-placeholderr.herokuapp.com/posts&quot;)
                   <br />
-                  &nbsp;&nbsp;&nbsp;&nbsp; .then((res) =&gt; res.json())
+                  &nbsp;&nbsp;&nbsp;&nbsp;.then((res) =&gt; res.json())
                   <br />
-                  &nbsp;&nbsp;&nbsp;&nbsp; .then((res) =&gt; console.log(res))
+                  &nbsp;&nbsp;&nbsp;&nbsp;.then((data) =&gt; console.log(data)
+                  <br />
+                  );
                 </span>
               </div>
             </div>
@@ -86,11 +88,13 @@ function Section2() {
               </p>
               <div className="api-call-example">
                 <span>
-                  fetch(&#39;https://devangisa.com&#39;)
+                  fetch(&quot;https://project-placeholderr.herokuapp.com/comments&quot;)
                   <br />
-                  &nbsp;&nbsp;&nbsp;&nbsp; .then((res) =&gt; res.json())
+                  &nbsp;&nbsp;&nbsp;&nbsp;.then((res) =&gt; res.json())
                   <br />
-                  &nbsp;&nbsp;&nbsp;&nbsp; .then((res) =&gt; console.log(res))
+                  &nbsp;&nbsp;&nbsp;&nbsp;.then((data) =&gt; console.log(data)
+                  <br />
+                  );
                 </span>
               </div>
             </div>
@@ -114,11 +118,13 @@ function Section2() {
               </p>
               <div className="api-call-example">
                 <span>
-                  fetch(&#39;https://devangisa.com&#39;)
+                  fetch(&quot;https://project-placeholderr.herokuapp.com/github-profiles&quot;)
                   <br />
-                  &nbsp;&nbsp;&nbsp;&nbsp; .then((res) =&gt; res.json())
+                  &nbsp;&nbsp;&nbsp;&nbsp;.then((res) =&gt; res.json())
                   <br />
-                  &nbsp;&nbsp;&nbsp;&nbsp; .then((res) =&gt; console.log(res))
+                  &nbsp;&nbsp;&nbsp;&nbsp;.then((data) =&gt; console.log(data)
+                  <br />
+                  );
                 </span>
               </div>
             </div>

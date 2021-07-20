@@ -588,9 +588,10 @@ footer {
           .details {
             .title {
               margin-top: 20px;
+              white-space: nowrap
             }
             .api-call-example {
-              margin-top: 65px;
+              margin-top: 55px;
             }
           }
         }

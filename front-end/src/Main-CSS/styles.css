@@ -652,9 +652,10 @@ footer .attribution-to-programmer a {
   }
   .api-services .api-list ul li .details .title {
     margin-top: 20px;
+    white-space: nowrap;
   }
   .api-services .api-list ul li .details .api-call-example {
-    margin-top: 65px;
+    margin-top: 55px;
   }
   .api-services .api-list ul li {
     grid-gap: 30px;
