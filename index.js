@@ -147,6 +147,15 @@ app.get("/nasa-mars", (req, res) => {
     .then((data) => res.send(data));
 });
 
+app.get("/nasa-mars/:n", (req, res) => {
+  num = parseInt(req.params.n)
+    fetch(
+    "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=XPqgmvb2EVjO53epzVxa0JbQH6y8X1dIefEfK9kP"
+  )
+    .then((res) => res.json())
+    .then((data) => res.send(data.photos.slice(0, num)));
+});
+
 app.get("/nasa-apod", (req, res) => {
   fetch(
     "https://api.nasa.gov/planetary/apod?api_key=XPqgmvb2EVjO53epzVxa0JbQH6y8X1dIefEfK9kP"
