@@ -206,4 +206,4 @@ function validatePost(req) {
   return schema.validate(req.body);
 }
 
-app.listen(process.env.PORT || 5000);
+app.listen(process.env.PORT || 5000, () => console.log('Started at port 5000'));

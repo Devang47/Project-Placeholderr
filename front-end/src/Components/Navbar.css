@@ -38,8 +38,8 @@ nav .MainNavicon button {
 }
 
 nav .Navbar-trigger {
-  width: 27px;
-  height: 29px;
+  width: 32px;
+  height: 30px;
   z-index: 2;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -114,8 +114,8 @@ nav .Navbar-logo a svg {
 }
 
 nav .Navbar-right-icon {
-  height: 31px;
-  width: 33px;
+  height: 32px;
+  width: 34px;
 }
 
 nav .Navbar-right-icon a {
