@@ -1,7 +1,6 @@
 
 # Project-Placeholderr
-A free JSON Placeholder rest API with many useful endpoints. Manufactured with Node, Express, and React and deployed on Heroku.
-
+JSON Placeholder rest API built with Node + Express.
 
 ## API Endpoints:
 This is the list of all the currently available endpoints along with their currently supported methods :
