@@ -29,7 +29,7 @@ function Section2() {
               </p>
               <div className="api-call-example">
                 <span>
-                  fetch(&quot;https://project-placeholderr.herokuapp.com/images&quot;)
+                  fetch(&quot;https://placeholderr.onrender.com/images&quot;)
                   <br />
                   &nbsp;&nbsp;&nbsp;&nbsp;.then((res) =&gt; res.json())
                   <br />
@@ -59,7 +59,7 @@ function Section2() {
               </p>
               <div className="api-call-example">
                 <span>
-                  fetch(&quot;https://project-placeholderr.herokuapp.com/posts&quot;)
+                  fetch(&quot;https://placeholderr.onrender.com/posts&quot;)
                   <br />
                   &nbsp;&nbsp;&nbsp;&nbsp;.then((res) =&gt; res.json())
                   <br />
@@ -88,7 +88,7 @@ function Section2() {
               </p>
               <div className="api-call-example">
                 <span>
-                  fetch(&quot;https://project-placeholderr.herokuapp.com/comments&quot;)
+                  fetch(&quot;https://placeholderr.onrender.com/comments&quot;)
                   <br />
                   &nbsp;&nbsp;&nbsp;&nbsp;.then((res) =&gt; res.json())
                   <br />
@@ -118,7 +118,7 @@ function Section2() {
               </p>
               <div className="api-call-example">
                 <span>
-                  fetch(&quot;https://project-placeholderr.herokuapp.com/github-profiles&quot;)
+                  fetch(&quot;https://placeholderr.onrender.com/github-profiles&quot;)
                   <br />
                   &nbsp;&nbsp;&nbsp;&nbsp;.then((res) =&gt; res.json())
                   <br />

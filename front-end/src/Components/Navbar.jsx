@@ -27,7 +27,7 @@ function Navbar() {
           </a>
         </div>
         <div className="Navbar-logo MainNavicon">
-          <a href="https://project-placeholderr.herokuapp.com/#">Kitatsu</a>
+          <a href="https://placeholderr.onrender.com/#">Kitatsu</a>
         </div>
         <div className="Navbar-right-icon MainNavicon">
           <a
